@@ -85,4 +85,4 @@ for (px, py) in pin_positions:
     context.fill()
 
 # Save the image
-surface.write_to_png("BowlingAlleyWithBall.png")
+surface.write_to_png("Output/BowlingAlleyWithBall.png")
