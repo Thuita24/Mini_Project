@@ -1,52 +1,37 @@
-# Bowling Alley Scene with Python and Cairo
-This project renders a realistic bowling alley scene using the Cairo graphics library in
-Python. The scene includes a wooden bowling lane, a 3D bowling ball with finger holes, and
-bowling pins arranged in a triangular formation.
-
-# Table of Contents
-• Project Overview
-• Requirements
-• Setup and Installation
-• Code Explanation
-• Running the Project
-• Output
-
-# Project Overview
-The goal of this project is to create a visually appealing image of a bowling alley. Key
-elements include:
-• A wooden bowling lane with a wood grain effect.
-• A bowling ball with a 3D appearance and finger holes.
-• Six bowling pins positioned in a triangular formation with red stripes for realism.
-# Requirements
-• Python 3.x
-• cairo graphics library for Python
-# Setup and Installation
-To run this code, you'll need to install the cairo library. Follow these steps:
-1. Install the Cairo development libraries:
-o Linux: Run sudo apt-get install libcairo2-dev (Ubuntu/Debian)
-o Mac: Install via Homebrew: brew install cairo
-o Windows: Download and install from the Cairo website
-2. Install pycairo (Python binding for Cairo) using pip:
-3. bash
-Copy code
-pip install pycairo
-Code Explanation
-Lane Background
-The wooden lane is created with alternating shades of brown to simulate wooden planks.
-Bowling Ball
-A radial gradient provides a 3D effect, with darker edges and a light red highlight to mimic
-lighting. Three finger holes are drawn on the ball with shadow gradients.
-Pins
-Pins are arranged in a triangular formation at the top of the lane. Each pin consists of a
-white body with a rounded top and two red stripes.
-Running the Project
-1. Ensure the output directory (Output) exists, or create it in the same directory as the
-code.
-2. Run the script:
+Pong Game
+Overview
+Pong is a simple arcade-style game where you control a paddle and try to bounce a ball past your opponent's paddle. The game ends when either the player or the opponent reaches 10 points.
+Requirements
+•	Python 3.x
+•	Pygame library (Install using pip install pygame)
+Game Controls
+•	Player Paddle:
+o	Use Up Arrow to move up.
+o	Use Down Arrow to move down.
+•	Opponent Paddle:
+o	Use W to move up.
+o	Use S to move down.
+Game Rules
+•	The game is played between two paddles (one controlled by the player and the other by the opponent).
+•	The ball bounces off the top and bottom walls and can be hit by either paddle.
+•	When the ball crosses the left or right side of the screen, the player or the opponent scores a point.
+•	The first player to reach 10 points wins the game.
+•	A win message is displayed at the center of the screen when a player reaches 10 points, and the game ends after 2 seconds.
+How to Run
+1.	Install Python 3.x and Pygame.
+2.	Download the project files and open the terminal/command prompt in the project directory.
+3.	Run the game with the following command:
 bash
 Copy code
-python bowling_scene.py
-3. The rendered image will be saved as Output/BowlingAlleyWithBall.png.
-4. Output
-The generated image shows a 3D bowling ball on a wooden lane with six bowling pins at the
-top.
+python pong_game.py
+Game Features
+•	Real-time gameplay: The ball moves and bounces based on its speed, and the paddles respond to user input.
+•	Scoring system: The game tracks and displays the score for both the player and the opponent.
+•	Game Over: The game ends when a player reaches 10 points, and a win message is displayed for 2 seconds.
+•	Paddle movement: Both paddles are constrained within the screen boundaries.
+Technologies Used
+•	Python: Programming language used to develop the game.
+•	Pygame: Game development library used to handle graphics, sound, and user input.
+
+
+
